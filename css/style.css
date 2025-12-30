@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Home Area */
+.home-area {
+  display: flex;
+}
+
+.home-area img {
+  margin-top: 100px;
+  margin-left: 130px;
+  max-width: 100%;
+  height: auto;
+}
+
+.home-area .home-content {
+  margin-top: 100px;
+  min-height: 450px;
+  padding-top: 200px;
+  margin-left: 250px;
+}
+
+h3, h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+button{
+  height: 35px;
+  width: 150px;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(129, 191, 241);
+  transition: background 0.3s;
+   border-radius: 6px;
+   border-color: rgb(129, 191, 241);
+}
+button:hover{
+  background-color: rgb(144, 179, 235);
+  color: black;
+    border: 2px solid #000; 
+  
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  /* Navbar responsive */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    display: none; /* hidden by default on mobile */
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when toggled */
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Home area responsive */
+  .home-area {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-area img {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .home-area .home-content {
+    margin-left: 0;
+    padding-top: 60px;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h3, h5 {
+    font-size: 22px;
+  }
+}
+
+  /* ABOUT */
+.about-area {
+  display: flex;
+  margin-top: 100px;
+}
+
+.about-area img {
+  margin-left: 130px;
+  max-width: 450px;
+  height: auto;
+  margin-top: 100px;
+}
+
+.about-area .about-content {
+  min-height: 250px;
+  padding-top: 70px;
+  margin-left: 120px;
+  margin-right: 30px;
+  max-width: 500px;
+}
+.about-area h2{
+font-size: 35px;
+font-weight: bold;
+}
+@media (max-width: 768px) {
+  .about-area {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .about-area img {
+    margin: 0;
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .about-area .about-content {
+    margin: 0;
+    padding-top: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .about-area h2 {
+    font-size: 28px;
+  }
+}
+
+/* services area */
+.services-area {
+margin-bottom: 50px;
+text-align: center;
+}
+.services-area h3{
+ font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+  margin-top: 150px;}
+
+  .card{
+  padding: 20px;
+    display: flex;
+   gap: 20PX;
+ margin: 50px;
+ margin-left: 300px;
+ margin-right: 300px;
+ cursor: pointer;
+  }
+   .box1{
+    height: 250px;
+    width: 600px;
+      padding: 20px;
+    background-color: rgb(243, 240, 240);
+     transition: background 0.3s;
+   }   
+   .items img{
+    margin-bottom: 30px;
+        vertical-align: middle;
+    border-style: none;
+    width: 200px;
+    height: 70px;
+
+   }
+   .items h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.items p{
+  margin-bottom:0%
+}
+ .box2{
+    height: 250px;
+    width: 600px;
+      padding: 20px;
+    background-color: rgb(243, 240, 240);
+     transition: background 0.3s;
+   }
+    .box3{
+    height: 250px;
+    width: 600px;
+      padding: 20px;
+    background-color: rgb(243, 240, 240);
+     transition: background 0.3s;
+   }
+    .box4{
+    height: 250px;
+    width: 600px;
+      padding: 20px;
+    background-color: rgb(243, 240, 240);
+     transition: background 0.3s;
+   }
+   .box2 img{
+      margin-bottom: 30px;
+        vertical-align: middle;
+    border-style: none;
+    width: 200px;
+    height: 70px;
+   }
+    .box3 img{
+      margin-bottom: 30px;
+        vertical-align: middle;
+    border-style: none;
+    width: 200px;
+    height: 70px;
+   }
+    .box4 img{
+      margin-bottom: 30px;
+        vertical-align: middle;
+    border-style: none;
+    width: 200px;
+    height: 70px;
+   }
+  .box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover{
+   background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.25);
+  transform: translateY(-5px);
+}
+@media (max-width: 600px) {
+
+  .services-area h3{
+    font-size: 24px;
+    margin-top: 70px;
+    line-height: 32px;
+  }
+
+  .card{
+    flex-direction: column;   /* row → column */
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4{
+    width: 100%;              /* full width */
+    height: auto;
+  }
+
+  .items img{
+    width: 140px;
+    height: auto;
+  }
+
+  .items h4{
+    font-size: 16px;
+  }
+
+  .items p{
+    font-size: 14px;
+  }
+}
+
+
+   
+
+/* Footer Contact */
+.contact-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.contact-footer h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.contact-footer p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.contact-footer a {
+  color: #f9c74f;
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
